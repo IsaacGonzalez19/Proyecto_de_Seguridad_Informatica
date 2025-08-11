@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerta Phishing - Detector de Correos Sospechosos</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <!-- Header -->
+                <div class="text-center mb-5">
+                    <h1 class="display-4 text-primary">🛡️ Alerta Phishing</h1>
+                    <p class="lead">Detector básico de correos sospechosos</p>
+                    <p class="text-muted">Pega el contenido de tu correo electrónico para analizarlo</p>
+                </div>
+
+                <!-- Formulario de análisis -->
+                <div class="card shadow">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0">📧 Analizar Correo Electrónico</h5>
+                    </div>
+                    <div class="card-body">
+                        <form id="emailForm">
+                            <div class="mb-3">
+                                <label for="emailContent" class="form-label">
+                                    <strong>Contenido del correo:</strong>
+                                </label>
+                                <textarea
+                                    class="form-control"
+                                    id="emailContent"
+                                    name="emailContent"
+                                    rows="8"
+                                    placeholder="Pega aquí todo el contenido del correo electrónico que quieres analizar..."
+                                    required>
+                                </textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-lg" id="analyzeBtn">
+                                    🔍 Analizar Correo
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Resultados del análisis -->
+                <div id="results" class="mt-4" style="display: none;">
+                    <div class="card shadow">
+                        <div class="card-header" id="resultsHeader">
+                            <h5 class="mb-0">📊 Resultados del Análisis</h5>
+                        </div>
+                        <div class="card-body" id="resultsBody">
+                            <!-- Los resultados se cargarán aquí -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Información adicional -->
+                <div class="mt-5">
+                    <div class="card border-info">
+                        <div class="card-header bg-info text-white">
+                            <h6 class="mb-0">ℹ️ ¿Cómo funciona?</h6>
+                        </div>
+                        <div class="card-body">
+                            <ul class="mb-0">
+                                <li>Analiza palabras clave típicas del phishing</li>
+                                <li>Detecta URLs sospechosas</li>
+                                <li>Calcula un nivel de riesgo basado en patrones conocidos</li>
+                                <li>Proporciona recomendaciones de seguridad</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

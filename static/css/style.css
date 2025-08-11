@@ -1,0 +1,80 @@
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    border: none;
+    border-radius: 25px;
+    padding: 10px 30px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.alert-danger {
+    background: linear-gradient(45deg, #ff6b6b, #ee5a52);
+    border: none;
+    color: white;
+}
+
+.alert-warning {
+    background: linear-gradient(45deg, #ffd93d, #ff9f43);
+    border: none;
+    color: #333;
+}
+
+.alert-success {
+    background: linear-gradient(45deg, #6bcf7f, #4834d4);
+    border: none;
+    color: white;
+}
+
+.badge {
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+
+textarea:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.risk-high {
+    border-left: 5px solid #dc3545;
+}
+
+.risk-medium {
+    border-left: 5px solid #ffc107;
+}
+
+.risk-low {
+    border-left: 5px solid #28a745;
+}
