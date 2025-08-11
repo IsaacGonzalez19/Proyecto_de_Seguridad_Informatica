@@ -1,0 +1,48 @@
+{
+    "urgentes": [
+        "urgente",
+        "inmediatamente",
+        "ahora mismo",
+        "expire hoy",
+        "última oportunidad",
+        "tiempo limitado",
+        "actúa ahora"
+    ],
+    "amenazas": [
+        "suspender",
+        "bloquear",
+        "cerrar cuenta",
+        "eliminar",
+        "cancelar",
+        "desactivar",
+        "penalización"
+    ],
+    "dinero": [
+        "premio",
+        "ganador",
+        "millones",
+        "transferencia",
+        "banco",
+        "dinero gratis",
+        "inversión garantizada",
+        "lotería"
+    ],
+    "personales": [
+        "verificar",
+        "actualizar datos",
+        "confirmar",
+        "validar",
+        "información personal",
+        "datos bancarios",
+        "contraseña"
+    ],
+    "sospechosas": [
+        "hacer clic aquí",
+        "enlace",
+        "descarga inmediata",
+        "adjunto importante",
+        "no responder",
+        "reenvirar",
+        "confidencial"
+    ]
+}
